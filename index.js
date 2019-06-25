@@ -20,7 +20,6 @@ let initCrawler = function(urlToCrawl) {
 
 	//Check these attributes for mixed content
 	var attributeTypes = ['src','srcset','href'];
-	let url = url || urlToCrawl;
 	let crawler = new Crawler({
 			thread: thread,
 			logs: debug,
