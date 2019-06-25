@@ -5,21 +5,21 @@ const cheerio = require('cheerio')
 const colors = require('colors');
 const argv = require('yargs').argv
 
-let url = argv.url
-let thread = argv.thread || 1
-let depth = argv.depth || 3
-let debug = argv.debug
-
-if (argv.url.indexOf('https:') == -1) url = 'https://' + url
-let goodCount = 0, badCount = 0
-
-//These are the elements to check for mixed content
-let elementsToCheck = ['img','iframe','script','object','form','embed','video','audio','source','param','link']
-
-//Check these attributes for mixed content
-var attributeTypes = ['src','srcset','href'];
 
 let initCrawler = function(urlToCrawl) {
+	let url = argv.url || urlToCrawl;
+	let thread = argv.thread || 1
+	let depth = argv.depth || 3
+	let debug = argv.debug
+
+	if (url.indexOf('https:') == -1) url = 'https://' + url
+	let goodCount = 0, badCount = 0
+
+	//These are the elements to check for mixed content
+	let elementsToCheck = ['img','iframe','script','object','form','embed','video','audio','source','param','link']
+
+	//Check these attributes for mixed content
+	var attributeTypes = ['src','srcset','href'];
 	let url = url || urlToCrawl;
 	let crawler = new Crawler({
 			thread: thread,
