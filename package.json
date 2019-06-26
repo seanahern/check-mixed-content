@@ -8,7 +8,8 @@
     "cheerio": "latest",
     "colors": "^1.1.2",
     "easycrawler": "latest",
-    "yargs": "latest"
+    "yargs": "latest",
+    "whacko": "^0.19.1"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
