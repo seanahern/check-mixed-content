@@ -6,9 +6,9 @@ const colors = require('colors');
 const argv = require('yargs').argv
 
 
-let initCrawler = function(urlToCrawl) {
+let initCrawler = function(urlToCrawl. threads) {
 	let url = argv.url || urlToCrawl;
-	let thread = argv.thread || 1
+	let thread = argv.thread || threads || 1
 	let depth = argv.depth || 3
 	let debug = argv.debug
 
