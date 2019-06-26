@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 'use strict';
 const Crawler = require('easycrawler')
-const cheerio = require('cheerio')
+const cheerio = require('whacko')
 const colors = require('colors');
 const argv = require('yargs').argv
 

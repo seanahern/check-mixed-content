@@ -27,8 +27,11 @@
   ],
   "repository": {
     "type": "git",
-		"url": "https://github.com/seanahern/check-mixed-content"
+    "url": "https://github.com/seanahern/check-mixed-content"
   },
   "author": "Francis Kim <hello@franciskim.co> (https://franciskim.co)",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "whacko": "^0.19.1"
+  }
 }
