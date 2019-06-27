@@ -1,19 +1,64 @@
 {
-  "name": "check-mixed-content",
-  "version": "0.0.3",
-  "description": "Checks for mixed content a.k.a. HTTP references on HTTPS, very alpha.",
-  "main": "index.js",
-  "bin": "./index.js",
+  "_from": "git+https://github.com/seanahern/check-mixed-content.git#cli-changes",
+  "_id": "check-mixed-content@0.0.3",
+  "_inBundle": false,
+  "_integrity": "sha1-MWxowEdhQim2dfrBFi8CkDjBGQc=",
+  "_location": "/check-mixed-content",
+  "_phantomChildren": {
+    "cliui": "5.0.0",
+    "find-up": "3.0.0",
+    "get-caller-file": "2.0.5",
+    "os-locale": "3.1.0",
+    "require-directory": "2.1.1",
+    "require-main-filename": "2.0.0",
+    "set-blocking": "2.0.0",
+    "string-width": "3.1.0",
+    "which-module": "2.0.0",
+    "y18n": "4.0.0",
+    "yargs-parser": "13.1.1"
+  },
+  "_requested": {
+    "type": "git",
+    "raw": "check-mixed-content@git+https://github.com/seanahern/check-mixed-content.git#cli-changes",
+    "name": "check-mixed-content",
+    "escapedName": "check-mixed-content",
+    "rawSpec": "git+https://github.com/seanahern/check-mixed-content.git#cli-changes",
+    "saveSpec": "git+https://github.com/seanahern/check-mixed-content.git#cli-changes",
+    "fetchSpec": "https://github.com/seanahern/check-mixed-content.git",
+    "gitCommittish": "cli-changes"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/seanahern/check-mixed-content.git#86b5737d847eaaade296d3d1716654df4a4273ef",
+  "_spec": "check-mixed-content@git+https://github.com/seanahern/check-mixed-content.git#cli-changes",
+  "_where": "/Users/sean.ahern/git/otto",
+  "author": {
+    "name": "Francis Kim",
+    "email": "hello@franciskim.co",
+    "url": "https://franciskim.co"
+  },
+  "bin": {
+    "check-mixed-content": "./index.js"
+  },
+  "bugs": {
+    "url": "https://github.com/seanahern/check-mixed-content/issues"
+  },
+  "bundleDependencies": false,
   "dependencies": {
     "cheerio": "latest",
     "colors": "^1.1.2",
     "easycrawler": "latest",
-    "yargs": "latest",
+    "ora": "^3.4.0",
+    "whacko": "^0.19.1",
+    "yargs": "latest"
+  },
+  "deprecated": false,
+  "description": "Checks for mixed content a.k.a. HTTP references on HTTPS, very alpha.",
+  "devDependencies": {
     "whacko": "^0.19.1"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "homepage": "https://github.com/seanahern/check-mixed-content#readme",
   "keywords": [
     "http",
     "https",
@@ -26,13 +71,15 @@
     "crawl",
     "spider"
   ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "check-mixed-content",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seanahern/check-mixed-content"
+    "url": "git+https://github.com/seanahern/check-mixed-content.git"
   },
-  "author": "Francis Kim <hello@franciskim.co> (https://franciskim.co)",
-  "license": "ISC",
-  "devDependencies": {
-    "whacko": "^0.19.1"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.3"
 }
