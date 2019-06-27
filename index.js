@@ -63,7 +63,7 @@ let initCrawler = function(urlToCrawl, threads) {
 	let urlList = [];
 	//Check these attributes for mixed content
 	const starting = ora().start();
-	starting.text = "Crawling pages..."
+	starting.text = "Building list of pages to check..."
 	let crawler = new Crawler({
 			thread: thread,
 			logs: debug,
